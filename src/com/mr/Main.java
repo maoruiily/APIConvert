@@ -106,7 +106,7 @@ public class Main {
 //				bw.write("* 支持平台: <font color ='#40A977'>iOS" + mComponent.getIos().getMinVersion() + ",Android" + mComponent.getAndroid().getMinVersion() + "</font>\n");
 //				bw.write("* 说明: " + mComponent.getDescription() + "\n");
 				bw.write(" 支持平台: iOS" + mComponent.getIos().getMinVersion() + ",Android" + mComponent.getAndroid().getMinVersion() + "\n");
-				bw.write(" "+mComponent.getDescription() + "\n");
+				bw.write(" " + mComponent.getDescription() + "\n");
 
 				bw.write("\n");
 				bw.write("#### <font color ='#40A977'>**1.**</font> 属性\n");
@@ -137,16 +137,17 @@ public class Main {
 					} else {
 						bw.write("- 参数:\n");
 						bw.write("\n");
-						bw.write("  名称 | 数据类型 |默认值|是否必填|缺省值|说明\n");
-						bw.write("  ---- |-------------  |----------|--------------|--------|------\n");
+						bw.write("  名称 | 类型 |必填|默认值|说明\n");
+						bw.write("  ---- |-------------  |--------------|--------|------\n");
 
 						for (Para mPara : mParas) {
-							bw.write("  **" + mPara.getID() + "** |<font color ='#808000'>**" + mPara.getType() + "**</font> | " + mPara.getDefaultValue() + " | " + mPara.getRequired() + "|"
-									+ mPara.getDefaultValue() + "|" + mPara.getDescription() + "\n");
+							bw.write("  **" + mPara.getID() + "** |<font color ='#808000'>**" + mPara.getType() + "**</font> | " + mPara.getRequired() + " | " + mPara.getDefaultValue() + "|"
+									+ mPara.getDescription() + "\n");
 						}
 					}
 
-					// bw.write("- 返回值类型: **" + mMethode.getReturnType() +"**\n");
+					// bw.write("- 返回值类型: **" + mMethode.getReturnType()
+					// +"**\n");
 					bw.write("- 返回值类型 : <font color ='#808000'>**" + mMethode.getReturnType() + "**</font>\n");
 					bw.write("- 返回值描述: " + mMethode.getReturnDesc() + "\n");
 					bw.write("- 说明: " + mMethode.getDescription() + "\n");
@@ -177,12 +178,12 @@ public class Main {
 					} else {
 						bw.write("- 参数:\n");
 						bw.write("\n");
-						bw.write("  名称 | 数据类型 |默认值|是否必填|缺省值|说明\n");
-						bw.write("  ---- |-------------  |----------|--------------|--------|------\n");
+						bw.write("  名称 | 类型 |必填|默认值|说明\n");
+						bw.write("  ---- |-------------  |--------------|--------|------\n");
 
 						for (Para mPara : mParas) {
-							bw.write("  **" + mPara.getID() + "** |<font color ='#808000'>**" + mPara.getType() + "**</font> | " + mPara.getDefaultValue() + " | " + mPara.getRequired() + "|"
-									+ mPara.getDefaultValue() + "|" + mPara.getDescription() + "\n");
+							bw.write("  **" + mPara.getID() + "** |<font color ='#808000'>**" + mPara.getType() + "**</font> | " + mPara.getRequired() + " | " + mPara.getDefaultValue() + "|"
+									+ mPara.getDescription() + "\n");
 						}
 					}
 
